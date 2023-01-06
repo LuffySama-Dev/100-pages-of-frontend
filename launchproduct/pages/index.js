@@ -16,10 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="bg-black text-[#818487] min-h-screen">
+        <div className="lg:bg-black text-[#818487] min-h-screen bg-white">
           <div className="container mx-auto">
             <div>
-              <nav className="flex flex-row justify-between pt-10">
+              {/* <nav className="flex flex-row justify-between pt-10">
                 <div className="cursor-pointer">
                   <svg
                     width="66"
@@ -67,26 +67,29 @@ export default function Home() {
                     Sign up
                   </button>
                 </div>
-              </nav>
+              </nav> */}
             </div>
-            <div className="grid grid-cols-2">
-              <div className="pt-[180px]">
-                <h1 className="text-7xl font-bold text-white">
+            <div className="grid lg:grid-cols-2 grid-cols-1 ">
+              <div>
+                <Image src={earth} width="700" height="600" />
+              </div>
+              <div className="lg:pt-[180px] lg:text-left text-center">
+                <h1 className="text-7xl font-bold lg:text-white text-black">
                   Launch your best product through the Metaverse.
                 </h1>
-                <div className="max-w-[400px]">
-                  <p className="pt-4 text-lg text-white text-left">
+                <div className="lg:max-w-[400px]">
+                  <p className="pt-4 text-lg lg:text-white text-black">
                     We provide the best service for your company product in the
                     real world
                   </p>
                 </div>
-                <div className="flex felx-row items-center mt-6 gap-8">
+                <div className="flex felx-row lg:items-center lg:justify-start items-center justify-center mt-6 gap-8">
                   <div>
-                    <button className="bg-[#3880D0] text-white px-6 py-4 rounded-xl hover:scale-105">
+                    <button className="bg-[#3880D0] lg:text-white text-black px-6 py-4 rounded-xl hover:scale-105">
                       Get Started
                     </button>
                   </div>
-                  <div className="text-white flex justify-center items-center hover:cursor-pointer hover:scale-105">
+                  <div className="lg:text-white text-black flex justify-center items-center hover:cursor-pointer hover:scale-105">
                     <svg
                       width="42"
                       height="42"
@@ -100,14 +103,16 @@ export default function Home() {
                         fill="#D9D9D9"
                       />
                     </svg>
-                    <h1 className="ml-4 text-white font-semibold">Play Demo</h1>
+                    <h1 className="ml-4 lg:text-white text-black font-semibold">
+                      Play Demo
+                    </h1>
                   </div>
                 </div>
-                <div className="mt-10">
+                <div className="mt-10 lg:text-left text-center">
                   <h1 className="text-lg font-semibold">
                     Brands that trusts us
                   </h1>
-                  <div className="flex flex-row gap-8 mt-6 hover:cursor-pointer">
+                  <div className="flex flex-row gap-8 mt-6 hover:cursor-pointer lg:items-center lg:justify-start items-center justify-center">
                     <svg
                       width="86"
                       height="34"
@@ -295,9 +300,6 @@ export default function Home() {
                     </svg>
                   </div>
                 </div>
-              </div>
-              <div>
-                <Image src={earth} width="700" height="600" />
               </div>
             </div>
           </div>
